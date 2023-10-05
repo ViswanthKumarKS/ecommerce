@@ -106,7 +106,7 @@ window.addEventListener("load", () => {
   if (!localStorage.getItem("products")) {
     localStorage.setItem("products", JSON.stringify(initialproducts));
   }
-  if (location.pathname === "/ecommerce/Home.html") {
+  if (location.pathname === "/ecommerce/index.html") {
     loadProducts();
   }
   if (location.pathname === "/ecommerce/login.html") {
@@ -278,6 +278,7 @@ const loadProducts = () => {
   }
   productContainer.innerHTML = productbody;
 };
+loadProducts();
 //load products in admin page
 
 const loadAdminProducts = () => {
