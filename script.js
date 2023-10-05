@@ -278,7 +278,6 @@ const loadProducts = () => {
   }
   productContainer.innerHTML = productbody;
 };
-loadProducts();
 //load products in admin page
 
 const loadAdminProducts = () => {
