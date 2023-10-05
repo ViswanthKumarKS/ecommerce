@@ -1,0 +1,20 @@
+.gradient-custom
+{
+    background-image:url("/admin/images/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login_form #email_error,
+.login_form #pass_error
+{
+    margin-top: 5px;
+    width:345px;
+    color:black;
+    background: rgba(255, 0, 0, 0.1);
+    text-align: center;
+    padding:5px,8px;
+    border-radius: 3px;
+    border: 1px solid #ef9a9a;
+    display: none;
+
+}
