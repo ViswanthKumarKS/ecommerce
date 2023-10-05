@@ -278,7 +278,6 @@ const loadProducts = () => {
   }
   productContainer.innerHTML = productbody;
 };
-//loadProducts();
 //load products in admin page
 
 const loadAdminProducts = () => {
@@ -311,7 +310,6 @@ const loadAdminProducts = () => {
 
   productRow.innerHTML = body;
 };
-//loadAdminProducts();
 
 //delete  the products
 
@@ -443,7 +441,6 @@ const loadCartProduct = () => {
     }
   }
 };
-//loadCartProduct();
 
 //checkout
 
@@ -502,7 +499,6 @@ const loadorder = () => {
 
   // location.href = "/admin/users/index.html";
 };
-//loadorder();
 
 //load admin order page
 
@@ -557,4 +553,3 @@ const loadadminorder = () => {
     });
   }
 };
-//loadadminorder();
