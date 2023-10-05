@@ -278,7 +278,7 @@ const loadProducts = () => {
   }
   productContainer.innerHTML = productbody;
 };
-loadProducts();
+//loadProducts();
 //load products in admin page
 
 const loadAdminProducts = () => {
@@ -311,7 +311,7 @@ const loadAdminProducts = () => {
 
   productRow.innerHTML = body;
 };
-loadAdminProducts();
+//loadAdminProducts();
 
 //delete  the products
 
@@ -443,7 +443,7 @@ const loadCartProduct = () => {
     }
   }
 };
-loadCartProduct();
+//loadCartProduct();
 
 //checkout
 
@@ -502,7 +502,7 @@ const loadorder = () => {
 
   // location.href = "/admin/users/index.html";
 };
-loadorder();
+//loadorder();
 
 //load admin order page
 
@@ -557,4 +557,4 @@ const loadadminorder = () => {
     });
   }
 };
-loadadminorder();
+//loadadminorder();
