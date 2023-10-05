@@ -183,7 +183,7 @@ const Signin = () => {
     sessionStorage.setItem("userId", loggedInUser.id);
     if (emailinput.value === "admin123@gmail.com")
       location.replace("/ecommerce/login.html");
-    else location.replace("/ecommerce/Home.html");
+    else location.replace("/ecommerce/index.html");
   }
 };
 
@@ -249,7 +249,7 @@ const Signup = () => {
 
 // user singout handler
 const userSignOutHandler = () => {
-  location.replace("/ecommerce/Home.html");
+  location.replace("/ecommerce/index.html");
 };
 
 //load the products in home page
@@ -385,7 +385,7 @@ const addToCart = (id) => {
   let addtocart = JSON.parse(localStorage.getItem("products"));
   const product = addtocart.find((product) => product.id === parseInt(id));
   if (!sessionStorage.getItem("userId")) {
-    location.href = "/ecommerce/Home.html";
+    location.href = "/ecommerce/index.html";
   } else {
     let userId = parseInt(sessionStorage.getItem("userId"));
     let cart = [];
@@ -468,7 +468,7 @@ const checkout = () => {
       );
       localStorage.setItem("cart", JSON.stringify(otherCart));
       localStorage.setItem("orders", JSON.stringify(orders));
-      location.href = "/ecommerce/Home.html";
+      location.href = "/ecommerce/index.html";
     }
   }
 };
@@ -498,7 +498,7 @@ const loadorder = () => {
 
   orderref.innerHTML = body;
 
-  // location.href = "/admin/users/Home.html";
+  // location.href = "/admin/users/index.html";
 };
 
 //load admin order page
