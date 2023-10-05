@@ -182,8 +182,8 @@ const Signin = () => {
   } else {
     sessionStorage.setItem("userId", loggedInUser.id);
     if (emailinput.value === "admin123@gmail.com")
-      location.replace("/login.html");
-    else location.replace("/Home.html");
+      location.replace("/ecommerce/login.html");
+    else location.replace("/ecommerce/Home.html");
   }
 };
 
@@ -385,7 +385,7 @@ const addToCart = (id) => {
   let addtocart = JSON.parse(localStorage.getItem("products"));
   const product = addtocart.find((product) => product.id === parseInt(id));
   if (!sessionStorage.getItem("userId")) {
-    location.href = "/Home.html";
+    location.href = "/ecommerce/Home.html";
   } else {
     let userId = parseInt(sessionStorage.getItem("userId"));
     let cart = [];
