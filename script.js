@@ -182,7 +182,7 @@ const Signin = () => {
   } else {
     sessionStorage.setItem("userId", loggedInUser.id);
     if (emailinput.value === "admin123@gmail.com")
-      location.replace("/ecommerce/login.html");
+      location.replace("/ecommerce/admin_login.html");
     else location.replace("/ecommerce/index.html");
   }
 };
