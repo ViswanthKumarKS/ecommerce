@@ -310,7 +310,6 @@ const loadAdminProducts = () => {
 
   productRow.innerHTML = body;
 };
-loadAdminProducts();
 
 //delete  the products
 
